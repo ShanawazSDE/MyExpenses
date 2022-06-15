@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<com.chauthai.swipereveallayout.SwipeRevealLayout-->
+<!--    android:id="@+id/swipeRecItem"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginBottom="5sp"-->
+<!--    android:layout_marginHorizontal="5sp"-->
+<!--    android:layout_gravity="center_vertical"-->
+<!--    app:mode="normal"-->
+<!--    app:dragEdge="right">-->
+
+<!--&lt;!&ndash;    swipeLayout&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/deleteIcon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:src="@drawable/ic_baseline_delete_outline_24"-->
+<!--            android:backgroundTint="@color/primaryBackground"-->
+<!--            android:layout_marginHorizontal="10sp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash;main layout&ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:elevation="0sp"-->
+<!--        app:cardCornerRadius="5sp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/relativeLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="10"-->
+<!--            android:layout_marginHorizontal="5sp"-->
+<!--           >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0sp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="6"-->
+<!--                >-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_title"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:paddingVertical="5sp"-->
+<!--                android:fontFamily="@font/adamina"-->
+<!--                android:gravity="start"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_date"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:paddingBottom="5sp"-->
+<!--                    android:fontFamily="@font/adamina"-->
+<!--                    android:gravity="start"-->
+<!--                    android:textColor="#ED787878"-->
+<!--                    android:textSize="11sp"-->
+<!--                    android:textStyle="normal"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_price"-->
+<!--                android:layout_width="0sp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="4"-->
+<!--                android:paddingVertical="8sp"-->
+<!--                android:fontFamily="@font/adamina"-->
+<!--                android:gravity="end"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+
+
+<!--        </LinearLayout>-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</com.chauthai.swipereveallayout.SwipeRevealLayout>-->
+
+
+
+<!--                    android:paddingTop="5sp"-->
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRecItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5sp"
+    android:layout_marginHorizontal="5sp"
+    app:mode="normal"
+    app:dragEdge="right">
+
+    <!--    swipeLayout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_delete_outline_24"
+            android:backgroundTint="@color/primaryBackground"
+            android:layout_marginHorizontal="10sp"
+            />
+    </LinearLayout>
+
+    <!--main layout-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0sp"
+        app:cardCornerRadius="5sp"
+        >
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="6"
+
+
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingStart="5sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="start"
+                    android:textColor="#ED787878"
+                    android:textSize="11sp"
+                    android:paddingStart="5sp"
+                    android:paddingBottom="4sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:paddingVertical="8sp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center_vertical"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingEnd="5sp"
+                tools:ignore="RtlCompat" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
